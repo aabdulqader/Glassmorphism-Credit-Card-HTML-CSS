@@ -1,0 +1,149 @@
+/* ========== GOOGLE FONT ========== */
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap");
+
+body {
+  background: #141414;
+  height: 100vh;
+  font-family: "Saira", sans-serif;
+}
+
+/* BACKGROUND CIRCLES */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+.circles {
+  position: absolute;
+  height: 270px;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle__one {
+  height: 120px;
+  width: 120px;
+  top: -50px;
+  left: -60px;
+  background: linear-gradient(166.07deg, #e3179e 9.94%, #7c00c8 94.99%);
+  transform: rotate(41.4deg);
+}
+.circle__two {
+  height: 200px;
+  width: 200px;
+  bottom: -90px;
+  right: -90px;
+  opacity: 0.8;
+  background: linear-gradient(91.36deg, #ff493c 1.08%, #ff1861 98.23%);
+  transform: rotate(41.4deg);
+}
+.circle__three {
+  height: 60px;
+  width: 60px;
+  top: -24px;
+  right: 120px;
+  opacity: 0.8;
+  background: linear-gradient(181.16deg, #079f99 0.99%, #0fe3ff 76.35%);
+  transform: rotate(-25.07deg);
+  -webkit-transform: rotate(-25.07deg);
+  -moz-transform: rotate(-25.07deg);
+  -ms-transform: rotate(-25.07deg);
+  -o-transform: rotate(-25.07deg);
+}
+
+/* ========== CARD ========== */
+
+.card__group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.card {
+  position: relative;
+  height: 270px;
+  width: 450px;
+  border-radius: 25px;
+  background: linear-gradient(
+    109.4deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.05) 101.64%
+  );
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.267);
+  box-shadow: 8px 10px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.card__bank img,
+.card__chip img,
+.card__type img,
+.card__number,
+.card__holder,
+.card__validity {
+  position: absolute;
+}
+
+.card__bank img {
+  top: 24px;
+  left: 24px;
+  height: 48px;
+}
+.card__type img {
+  bottom: 16px;
+  right: 16px;
+  height: 48px;
+}
+
+.card__chip img {
+  top: 112px;
+  right: 24px;
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.card__number {
+  top: 120px;
+  left: 24px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  word-spacing: 6px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.164);
+}
+
+.card__holder {
+  left: 150px;
+  bottom: 16px;
+}
+
+.card__validity {
+  left: 24px;
+  bottom: 16px;
+}
+
+.card__holder span,
+.card__validity span {
+  font-size: 10px;
+  color: #e8e8e8;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.card__holder p,
+.card__validity p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
